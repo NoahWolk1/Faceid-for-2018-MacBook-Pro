@@ -1,6 +1,6 @@
 from opencv.fr import FR
 BACKEND_URL = "https://us.opencv.fr"
-DEVELOPER_KEY = "ecMS9siOGU2ZmNiMjMtYWZhMy00Mjk5LThjM2MtZjdhYTBhZGYyZTRk"
+DEVELOPER_KEY = #Add OpenCV key here
 
 sdk = FR(
         BACKEND_URL,
@@ -11,17 +11,17 @@ from opencv.fr.persons.schemas import PersonBase
 
 person = PersonBase(
     [
-        "/Users/noahwolk/Desktop/Face/Photo on 3-23-23 at 8.43 PM.jpg",
-        "/Users/noahwolk/Desktop/Face/Photo on 3-23-23 at 8.42 PM #2.jpg",
-        "/Users/noahwolk/Desktop/Face/Photo on 3-23-23 at 8.42 PM.jpg",
+        #add path of a photo of your face
+        #add the path of a photo of your face from a different angle
+        #add the path of a photo of your face from a different angle
     ],
-    name = "Noah"
+    name = "#your name"
 )
 
 from opencv.fr.search.schemas import SearchRequest, SearchMode
 
 
-search_request = SearchRequest(["/Users/noahwolk/Desktop/Face/Photo on 3-23-23 at 8.50 PM.jpg"])
+search_request = SearchRequest(["#path of the photo of your face"])
 
 result = sdk.search.search(search_request)
 
